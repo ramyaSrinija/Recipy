@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="src/assets/logo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <script defer src="src/js/controller.js" type="module"></script>
+
+    <title>recipy</title>
+  </head>
+
+  <body>
+     <div class="container">
+        <header class="header">
+            <img src="src/assets/logo.png" alt="Logo" class="header__logo" />
+            <form class="search">
+              <input
+                type="text"
+                class="search__field"
+                placeholder="Search recipes..."
+              />
+              <button class="btn search__btn">
+                <span>Search</span>
+              </button>
+            </form>
+    
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <button class="nav__btn nav__btn--bookmarks">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                      <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                    </svg>
+                    <span>&nbsp; Bookmarks</span>
+                  </button>
+                  <div class="bookmarks">
+                    <ul class="bookmarks__list">
+                      <div class="message">
+                        <p>
+                          No bookmarks yet. Find a nice recipe and bookmark it :)
+                        </p>
+                      </div>
+    
+                      <!-- <li class="preview">
+                        <a class="preview__link" href="#23456">
+                          <figure class="preview__fig">
+                            <img src="src/img/test-1.jpg" alt="Test" />
+                          </figure>
+                          <div class="preview__data">
+                            <h4 class="preview__name">
+                              Pasta with Tomato Cream ...
+                            </h4>
+                            <p class="preview__publisher">The Pioneer Woman</p>
+                          </div>
+                        </a>
+                      </li> -->
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+        </header>
+
+        <div class="search-results">
+            <ul class="results">
+            </ul>
+    
+            <div class="pagination">
+              
+            </div>
+        </div>
+        <div class="recipe">
+            <div class="message">
+                <p>Start by searching for a recipe or an ingredient. Have fun!</p>
+              </div>
+        </div>
+     </div>
+  </body>
+</html>
